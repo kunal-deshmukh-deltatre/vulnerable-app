@@ -12,6 +12,7 @@ jobs:
       uses: google/osv-scanner@main
       with: 
        args: --json --help
+       to-scan: /github/worspace --json
     - run: |
         pwd
         ls
