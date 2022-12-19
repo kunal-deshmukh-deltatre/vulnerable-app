@@ -11,7 +11,12 @@ jobs:
     - name: Google OSV scanner
       uses: google/osv-scanner@main
       with: 
-       args: -r .
+       args: -r . --json results.json
+    - name: 'Upload artifact'
+    - uses: actions/upload-artifact@v3
+      with:
+       name: my-artifact
+       path: results.json
        
       
       
