@@ -4,12 +4,8 @@ jobs:
  build:
   name: Build
   runs-on: ubuntu-20.04
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - run: |
-         echo $GITHUB_WORKSPACE
-         ls /github/workspace
+  steps:   
+    - uses: actions/checkout@v3   
     - name: Google OSV scanner
       uses: google/osv-scanner@main
       
