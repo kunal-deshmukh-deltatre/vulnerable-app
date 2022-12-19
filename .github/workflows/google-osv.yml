@@ -10,7 +10,8 @@ jobs:
         pwd
     - name: Google OSV scanner
       uses: google/osv-scanner@main
-      
+      with: 
+       to-scan: /home/runner/work/vulnerable-app/vulnerable-app
       
       
       
