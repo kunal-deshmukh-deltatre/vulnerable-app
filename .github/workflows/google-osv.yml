@@ -7,6 +7,9 @@ jobs:
   steps:
     - name: Checkout code
       uses: actions/checkout@v3
+    - run: |
+         echo $GITHUB_WORKSPACE
+         ls /github/workspace
     - name: Google OSV scanner
       uses: google/osv-scanner@main
       
