@@ -11,7 +11,7 @@ jobs:
     - name: Google OSV scanner
       uses: google/osv-scanner@main
       with: 
-       args: sdfdsf
+       args: json
     - run: |
         pwd
         ls
