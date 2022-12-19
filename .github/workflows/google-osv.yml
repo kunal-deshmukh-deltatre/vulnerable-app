@@ -11,7 +11,8 @@ jobs:
     - name: Google OSV scanner
       uses: google/osv-scanner@main
       with: 
-       to-scan: /home/runner/work/vulnerable-app/vulnerable-app
+       args: -r .
+       to-scan: /home/runner/work/vulnerable-app
       
       
       
