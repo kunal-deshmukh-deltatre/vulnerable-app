@@ -9,7 +9,7 @@ jobs:
     - run: |
         pwd
     - name: Google OSV scanner
-      uses: google/osv-scanner@main
+      uses: google/osv-scanner@v1.0.1
       with: 
        args: --help       
     - run: |
