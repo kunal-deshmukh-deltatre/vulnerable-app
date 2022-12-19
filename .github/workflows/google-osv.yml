@@ -12,7 +12,6 @@ jobs:
       uses: google/osv-scanner@main
       with: 
        args: -r .
-       to-scan: /home/runner/work/vulnerable-app
-      
+       
       
       
