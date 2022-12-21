@@ -21,7 +21,7 @@ jobs:
     - run: |
         pwd
         ls
-        osv-scanner -r . --json
+        osv-scanner --json -r . 
       if: always()
     - uses: actions/upload-artifact@v3
       if: always()
