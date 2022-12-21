@@ -12,11 +12,12 @@ jobs:
       uses: google/osv-scanner@v1.0.1
       with: # Grab the latest version
        repo: google/osv-scanner
-      
-    - name: Google OSV scanner
-      uses: google/osv-scanner@v1.0.1
-      with: 
-       args: --help       
+    
+    - name: Download Google OSV Scanner
+      uses: jaxxstorm/action-install-gh-release@v1.5.0
+      with: # Grab the latest version
+         repo: google/osv-scanner  
+    
     - run: |
         pwd
         ls
