@@ -15,13 +15,13 @@ jobs:
          repo: google/osv-scanner
          tag: v1.0.2
          extension-matching: disable
-         rename-to: osv
+         rename-to: osv-scanner
          chmod: 0755
     
     - run: |
         pwd
         ls
-        osv
+        osv-scanner -r . --json
       if: always()
     - uses: actions/upload-artifact@v3
       if: always()
