@@ -14,6 +14,9 @@ jobs:
       with: # Grab the latest version
          repo: google/osv-scanner
          tag: v1.0.2
+         extension-matching: disable
+         rename-to: osv
+         chmod: 0755
     
     - run: |
         pwd
